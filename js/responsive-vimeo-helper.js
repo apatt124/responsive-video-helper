@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
     function videoInit(clickedID){
+        $('.embed-container img').fadeIn();
         $('.embed-' + clickedID + ' img').fadeOut();
 
         var player = new Vimeo.Player($('.embed-' + clickedID + ' iframe'));
