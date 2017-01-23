@@ -21,7 +21,6 @@ jQuery(document).ready(function($){
         player.on('ended', function(){
             $('.embed-' + clickedID + ' img').fadeIn();
         });
-
     }
 
     $('iframe').each(function(){
@@ -29,7 +28,7 @@ jQuery(document).ready(function($){
         if(iframeSource[2] == 'player.vimeo.com'){
             videoID = iframeSource[4].split('?');
             $(this).wrap("<div class='embed-container embed-" + videoID[0] + "'>");
-            $(".embed-" + videoID[0]).prepend("<style>.embed-container { position: relative; padding-bottom: 42.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container img{ position: absolute; left: 0; z-index: 2; object-fit: cover; width: 100%;} .embed-container img.play-btn{ width: 10%; left: 45%; top: 40%; z-index: 3; cursor: pointer;} .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><img class='play-btn' src='" + RVH_URL.pluginUrl + "/img/play-button.png' data-video-id='" + videoID[0] + "' /><img class='thumbnail' src=''  data-video-id='" + videoID[0] + "'/>");
+            $(".embed-" + videoID[0]).prepend("<style>.embed-container { position: relative; padding-bottom: 42.7%; height: 0; overflow: hidden; max-width: 100%; } .embed-container img{ position: absolute; left: 0; z-index: 2; object-fit: cover; width: 100%;} .embed-container img.play-btn{ width: 10%; left: 45%; top: 40%; z-index: 3; cursor: pointer;} .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><img class='play-btn' src='" + RVH_URL.pluginUrl + "/img/play-button.png' data-video-id='" + videoID[0] + "' /><img class='thumbnail' src=''  data-video-id='" + videoID[0] + "'/>");
 
             $.ajax({
                 async: false,
