@@ -1,4 +1,4 @@
-# Responsive Video Helper
+# Responsive Vimeo Helper
 
 This plugin is designed to make all iframe embedded Vimeo sourced video fully responsive, as well as retrieve their thumbnails from the Vimeo API and apply them as an overlaid play button. 
 
